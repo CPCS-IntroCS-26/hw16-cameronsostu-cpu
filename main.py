@@ -15,6 +15,7 @@ def main():
     for animal in animals:
         print(animal.speak())
         print(animal.move())
+        print(animal.describe())
         print()
         pass
 
