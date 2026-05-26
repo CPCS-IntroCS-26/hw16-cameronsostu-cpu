@@ -52,7 +52,7 @@ class Bird(Animal):
 class Fish(Animal):
     def __init__(self, name, age, water_type):
         super().__init__(name, age, "Gubble", "Swimming creatures")
-        self.__water_type = water_type
+        self.water_type = water_type
 
 
     def move(self):
@@ -71,7 +71,7 @@ class Cat(Animal):
         self.__indoor = indoor
 
     def move(self):
-        print(f"{self.__name} walks around")
+        print(f"{self.name} walks around")
 
     def __str__(self):
         return f"""{Cat.speak}
